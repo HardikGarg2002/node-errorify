@@ -21,11 +21,11 @@ const globalErrorHandler = (
       message: err.message,
       errorCode: err.errorCode,
       status: err.status,
+      metaData: err.metadata,
     });
     return res.status(err.status).json({
       message: err.message,
       errorCode: err.errorCode,
-      status: err.status,
     });
   }
 
