@@ -59,4 +59,12 @@ export default class APIError extends Error {
   ) {
     return new APIError(message, errorCode, 403, metadata);
   }
+
+  static BusinessError(
+    message: string,
+    errorCode = APIError.DEFAULT_ERROR_CODE,
+    metadata?: Record<string, unknown>
+  ) {
+    return new APIError(message, errorCode, 400, metadata);
+  }
 }
