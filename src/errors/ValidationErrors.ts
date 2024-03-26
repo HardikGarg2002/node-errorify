@@ -29,6 +29,7 @@ export default class ValidationErrors extends Error {
   toJSON() {
     return {
       message: this.message,
+      errorCode: "VALIDATION_ERROR",
       errors: this.fieldErrors,
     };
   }
