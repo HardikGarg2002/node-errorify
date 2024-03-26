@@ -35,12 +35,12 @@ Usage
 
 ### 1\. Import Essential Components
 
-    import { APIError, ValidationErrors, DatabaseError, RateLimitError, globalErrorHandler, asyncHandler } from "error-handling-package";
+    import { APIError, ValidationErrors, DatabaseError, RateLimitError, globalErrorHandler, asyncHandler } from "@hardikgarg2002/node-errorify";
 
 ### 2\. Set Up Global Error Handling
 
     import express from 'express';
-    import { globalErrorHandler } from 'error-handling-package';
+    import { globalErrorHandler } from '@hardikgarg2002/node-errorify';
     
     const app = express();
     
@@ -71,7 +71,7 @@ Usage
 
 ### 4\. Using Async Error Wrapper
 
-    import { asyncHandler } from "error-handling-package";
+    import { asyncHandler } from "@hardikgarg2002/node-errorify";
     
     app.get(
       "/example",
