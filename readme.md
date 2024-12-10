@@ -15,7 +15,7 @@ A production-ready Node.js package for consistent and structured error handling 
 
 ## Installation
 ```bash
-npm install error-handling-package
+npm i @hardikgarg2002/node-errorify
 ```
 
 Error Handling Package
@@ -28,7 +28,7 @@ A comprehensive error handling solution for Node.js/TypeScript applications.
 Installation
 ------------
 
-    npm install error-handling-package
+    npm i @hardikgarg2002/node-errorify
 
 Usage
 -----
