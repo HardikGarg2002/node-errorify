@@ -1,9 +1,11 @@
 {
   "name": "@hardikgarg2002/node-errorify",
-  "version": "1.0.3",
-  "main": "index.ts",
+  "version": "1.0.4",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +15,6 @@
     "middleware",
     "express"
   ],
-  "types": "index.d.ts",
   "author": "Hardik Garg",
   "license": "ISC",
   "description": "A modular error handling package for Node.js applications.",
