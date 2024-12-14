@@ -26,7 +26,9 @@ jobs:
       - name: Run build
         run: npm run build # Only if you have a build step (e.g., for TypeScript)
 
-      - name: Publish to npm
+       - name: Publish to npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access public
