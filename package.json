@@ -1,8 +1,8 @@
 {
   "name": "@hardikgarg2002/node-errorify",
-  "version": "1.0.5",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "version": "1.0.6",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
@@ -15,7 +15,7 @@
     "middleware",
     "express"
   ],
-   "publishConfig": {
+  "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "author": "Hardik Garg",
